@@ -13,3 +13,7 @@ How to use CMakeList to create and manage multiple C/C++ project in subdirectori
 // Guide - https://www.glfw.org/docs/latest/intro_guide.html
 // Download - https://www.glfw.org/download
 How to use GLFW library in C++. CMakeList file example to create project with all linking.
+
+# OpenGlLoadingLibraries_ex1
+Different libraries and basic examples on how to setup and use those libraries to create the gui window.
+1. GLUT.

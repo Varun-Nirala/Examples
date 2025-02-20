@@ -1,13 +1,15 @@
 # GlfwUsage_ex1
+To show how to use GLFW library in C/C++.
+CMakeList file on how to create a simple project with all linking.
+
 // Guide - https://www.glfw.org/docs/latest/intro_guide.html
 // Download - https://www.glfw.org/download
 
-Downloaded zip will extract to something like below:
+# Downloaded zip will extract to something like below:
 	- docs/
-	- include/
-		/GLFW/
-			/glfw3.h
-			/glfw3nativ.h
+	- include/GLFW/
+		/glfw3.h
+		/glfw3nativ.h
 	- lib-mingw-x64/
 	- lib-static-ucrt/
 	- lib-vc2022/
@@ -17,9 +19,6 @@ Downloaded zip will extract to something like below:
 		/glfw3dll.lib
 	
 For Visual Studio 2022, we use lib-vc2022/.
-
-To show how to use GLFW library in C/C++.
-CMakeList file on how to create a simple project with all linking.
 
 # Description
 GLFW is a free, Open Source, multi-platform lib for OpenGL, OpenGLES & Vulkan app dev.
