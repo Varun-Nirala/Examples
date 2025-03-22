@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.20...3.31)
 
 # Solution name
 project(CMakeList_ex2)

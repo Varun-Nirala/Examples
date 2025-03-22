@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.20...3.31)
 
 SET(PROJECT "OpenGlLoadingLibraries_ex1")
 
@@ -13,8 +13,11 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_C_STANDARD 23)
 
 if (MSVC)	# For Visual Studio
-    # warning level 4 and all warnings as errors
-    add_compile_options(/W4 /WX)
+    # W4 = warning level 4
+	# WX = Treat all warnings as errors
+	# permissive- = C/C++ -> Language -> Conformance mode -> Yes (means, disable language extensions)
+	#						i.e, Disable everything which is provided by visual studio as extension but is not c++ standard.
+    add_compile_options(/W4 /WX /permissive-)
 else()
     # lots of warnings and all warnings as errors
     add_compile_options(-Wall -Wextra -pedantic -Werror)
@@ -46,7 +49,7 @@ add_executable(${PROJECT} ${Src} ${Model})
 # freeglut download URL - https://github.com/freeglut/freeglut/releases
 
 # This is where I have all the libraries.
-set(CommonLibs_DIR D:/GitHubRepos/CommonLibs)
+set(CommonLibs_DIR D:/GitHubRepos/_CommonLibs)
 # This is where I have GLFW library. It is inside CommonLibs => CommonLibs/GLFW.
 set(Freeglut_DIR ${CommonLibs_DIR}/FREEGLUT)
 
