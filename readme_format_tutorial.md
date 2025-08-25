@@ -3,7 +3,9 @@
 ### 3rd Level Heading
 
 
-From: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
+From: 
+- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 Line Break<br/>
 `Two spaces` or `backslash (\)` or `HTML single line break tag (<br\>)`
